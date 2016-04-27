@@ -12069,6 +12069,7 @@ I2C</description>
 <part name="BAT-" library="wirepad" deviceset="SMD2" device=""/>
 <part name="ANT" library="wirepad" deviceset="SMD2" device=""/>
 <part name="IC2" library="microchip" deviceset="24*" device="SN" technology="LC256"/>
+<part name="GND" library="wirepad" deviceset="SMD2" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12111,6 +12112,7 @@ I2C</description>
 <instance part="BAT-" gate="1" x="43.18" y="5.08"/>
 <instance part="ANT" gate="1" x="-17.78" y="68.58" rot="R270"/>
 <instance part="IC2" gate="G$1" x="114.3" y="15.24"/>
+<instance part="GND" gate="1" x="93.98" y="15.24"/>
 </instances>
 <busses>
 </busses>
@@ -12187,6 +12189,9 @@ I2C</description>
 <pinref part="IC2" gate="G$1" pin="A0"/>
 <pinref part="IC2" gate="G$1" pin="A1"/>
 <pinref part="IC2" gate="G$1" pin="A2"/>
+<pinref part="GND" gate="1" pin="P"/>
+<wire x1="99.06" y1="15.24" x2="96.52" y2="15.24" width="0.1524" layer="91"/>
+<junction x="99.06" y="15.24"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="GND"/>
