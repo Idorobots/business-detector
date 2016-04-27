@@ -12335,6 +12335,7 @@ I2C</description>
 <approved hash="113,1,45.4406,18.9526,BAT+,,,,,"/>
 <approved hash="113,1,45.4406,6.25263,BAT-,,,,,"/>
 <approved hash="113,1,-16.6074,66.3194,ANT,,,,,"/>
+<approved hash="113,1,96.2406,16.4126,GND,,,,,"/>
 </errors>
 </schematic>
 </drawing>
