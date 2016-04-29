@@ -64,7 +64,6 @@
 <wire x1="0" y1="40.63" x2="0" y2="0" width="0" layer="20"/>
 <text x="60.96" y="33.655" size="3.81" layer="1" rot="R180">Kajetan Rzepecki</text>
 <text x="60.325" y="26.035" size="2.1844" layer="1" rot="R180">https://idorobots.org</text>
-<circle x="12.3825" y="12.7" radius="10.16" width="0.4064" layer="25"/>
 <text x="60.96" y="33.655" size="3.81" layer="29" rot="R180">Kajetan Rzepecki</text>
 <text x="60.325" y="26.035" size="2.1844" layer="29" rot="R180">https://idorobots.org</text>
 <polygon width="0.127" layer="25">
@@ -1417,6 +1416,45 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </package>
 </packages>
 </library>
+<library name="bat">
+<packages>
+<package name="KB3003">
+<wire x1="-3.81" y1="-10.795" x2="3.81" y2="-10.795" width="0.127" layer="51"/>
+<wire x1="-3.81" y1="-10.795" x2="-10.795" y2="-5.08" width="0.127" layer="51"/>
+<wire x1="3.81" y1="-10.795" x2="10.795" y2="-5.08" width="0.127" layer="51"/>
+<wire x1="-10.795" y1="6.35" x2="-5.08" y2="8.89" width="0.127" layer="51" curve="-146.309932"/>
+<wire x1="5.08" y1="8.89" x2="10.795" y2="6.35" width="0.127" layer="51" curve="-146.309932"/>
+<wire x1="5.08" y1="8.89" x2="-5.08" y2="8.89" width="0.127" layer="51" curve="-136.397181"/>
+<wire x1="-3.81" y1="0" x2="-7.62" y2="0" width="0.127" layer="51" curve="-285.068488"/>
+<wire x1="-4.445" y1="-0.635" x2="-6.985" y2="-0.635" width="0.127" layer="51" curve="-285.068488"/>
+<wire x1="-7.62" y1="0" x2="-7.62" y2="3.81" width="0.127" layer="51"/>
+<wire x1="-6.985" y1="-0.635" x2="-6.985" y2="3.81" width="0.127" layer="51"/>
+<wire x1="-3.81" y1="0" x2="-3.81" y2="3.81" width="0.127" layer="51"/>
+<wire x1="-4.445" y1="-0.635" x2="-4.445" y2="3.81" width="0.127" layer="51"/>
+<wire x1="7.62" y1="0" x2="3.81" y2="0" width="0.127" layer="51" curve="-285.068488"/>
+<wire x1="6.985" y1="-0.635" x2="4.445" y2="-0.635" width="0.127" layer="51" curve="-285.068488"/>
+<wire x1="3.81" y1="0" x2="3.81" y2="3.81" width="0.127" layer="51"/>
+<wire x1="4.445" y1="-0.635" x2="4.445" y2="3.81" width="0.127" layer="51"/>
+<wire x1="7.62" y1="0" x2="7.62" y2="3.81" width="0.127" layer="51"/>
+<wire x1="6.985" y1="-0.635" x2="6.985" y2="3.81" width="0.127" layer="51"/>
+<smd name="+@1" x="-11.43" y="0" dx="2" dy="10" layer="1"/>
+<smd name="+@2" x="11.43" y="0" dx="2" dy="10" layer="1"/>
+<smd name="-" x="0" y="0" dx="18" dy="18" layer="1" roundness="100"/>
+<wire x1="-10.795" y1="4.445" x2="-12.065" y2="4.445" width="0.127" layer="51"/>
+<wire x1="-12.065" y1="4.445" x2="-12.065" y2="-4.445" width="0.127" layer="51"/>
+<wire x1="-12.065" y1="-4.445" x2="-10.795" y2="-4.445" width="0.127" layer="51"/>
+<wire x1="10.795" y1="-4.445" x2="12.065" y2="-4.445" width="0.127" layer="51"/>
+<wire x1="12.065" y1="-4.445" x2="12.065" y2="4.445" width="0.127" layer="51"/>
+<wire x1="12.065" y1="4.445" x2="10.795" y2="4.445" width="0.127" layer="51"/>
+<wire x1="-10.795" y1="5.08" x2="-10.795" y2="-5.08" width="0.127" layer="51"/>
+<wire x1="10.795" y1="-5.08" x2="10.795" y2="5.08" width="0.127" layer="51"/>
+<wire x1="-10.795" y1="6.35" x2="-10.795" y2="5.08" width="0.127" layer="51"/>
+<wire x1="10.795" y1="6.35" x2="10.795" y2="5.08" width="0.127" layer="51"/>
+<wire x1="0" y1="-6.985" x2="0" y2="-9.525" width="0.127" layer="51"/>
+<wire x1="-1.27" y1="-8.255" x2="1.27" y2="-8.255" width="0.127" layer="51"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1654,8 +1692,6 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="27.305" y="3.175" size="0.0254" layer="27" rot="R180"/>
 <attribute name="NAME" x="26.1875" y="1.7275" size="1.016" layer="25" rot="R90"/>
 </element>
-<element name="BAT+" library="wirepad" package="SMD1,27-2,54" value="" x="23.495" y="12.7"/>
-<element name="BAT-" library="wirepad" package="SMD1,27-2,54" value="" x="12.7" y="12.7"/>
 <element name="IC2" library="microchip" package="SO-08" value="24LC256SN" x="27.305" y="8.255" smashed="yes" rot="R270">
 <attribute name="OC_FARNELL" value="9757996" x="27.305" y="8.255" size="1.016" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="MICROCHIP" x="27.305" y="8.255" size="1.016" layer="27" rot="R270" display="off"/>
@@ -1683,6 +1719,7 @@ design rules under a new name.</description>
 <attribute name="TP_SIGNAL_NAME" value="" x="66.9925" y="36.83" size="1" layer="37"/>
 <attribute name="VALUE" x="66.9925" y="37.973" size="0.0254" layer="27"/>
 </element>
+<element name="BAT" library="bat" package="KB3003" value="KB3003" x="11.43" y="14.605" rot="R90"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -1700,20 +1737,19 @@ design rules under a new name.</description>
 <vertex x="69.5325" y="24.765"/>
 <vertex x="53.6575" y="40.64"/>
 </polygon>
-<contactref element="BAT-" pad="1"/>
 <contactref element="IC2" pad="1"/>
 <contactref element="IC2" pad="2"/>
 <contactref element="IC2" pad="3"/>
 <contactref element="IC2" pad="4"/>
 <contactref element="GND" pad="1"/>
 <contactref element="R5" pad="1"/>
+<contactref element="BAT" pad="-"/>
 </signal>
 <signal name="VCC">
 <contactref element="IC1" pad="14"/>
 <contactref element="R7" pad="2"/>
 <contactref element="LED" pad="A"/>
 <contactref element="C4" pad="2"/>
-<contactref element="BAT+" pad="1"/>
 <contactref element="IC2" pad="8"/>
 <contactref element="IC2" pad="7"/>
 <wire x1="38.1" y1="2.54" x2="62.5475" y2="2.54" width="0.4064" layer="1"/>
@@ -1725,14 +1761,26 @@ design rules under a new name.</description>
 <wire x1="36.83" y1="10.16" x2="38.735" y2="12.065" width="0.4064" layer="1"/>
 <wire x1="38.735" y1="12.065" x2="43.18" y2="12.065" width="0.4064" layer="1"/>
 <wire x1="43.18" y1="12.065" x2="43.18" y2="12.5984" width="0.4064" layer="1"/>
-<wire x1="38.1" y1="2.54" x2="34.925" y2="5.715" width="0.4064" layer="1"/>
-<wire x1="34.925" y1="5.715" x2="34.925" y2="9.755" width="0.4064" layer="1"/>
+<wire x1="34.925" y1="9.525" x2="34.925" y2="9.755" width="0.4064" layer="1"/>
 <wire x1="29.905" y1="10.16" x2="29.905" y2="8.89" width="0.4064" layer="1"/>
 <wire x1="33.2775" y1="10.0125" x2="33.02" y2="9.755" width="0.4064" layer="1"/>
-<wire x1="23.495" y1="12.7" x2="27.365" y2="12.7" width="0.4064" layer="1"/>
 <wire x1="27.365" y1="12.7" x2="29.905" y2="10.16" width="0.4064" layer="1"/>
-<wire x1="29.905" y1="10.16" x2="32.9325" y2="10.16" width="0.4064" layer="1"/>
+<wire x1="29.905" y1="10.16" x2="32.385" y2="10.16" width="0.4064" layer="1"/>
+<wire x1="32.385" y1="10.16" x2="32.9325" y2="10.16" width="0.4064" layer="1"/>
 <wire x1="32.9325" y1="10.16" x2="33.02" y2="9.755" width="0.4064" layer="1"/>
+<contactref element="BAT" pad="+@2" route="any" routetag="G$1.+"/>
+<contactref element="BAT" pad="+@1" route="any" routetag="G$1.+"/>
+<wire x1="38.1" y1="2.54" x2="34.925" y2="5.715" width="0.4064" layer="1"/>
+<wire x1="34.925" y1="5.715" x2="34.925" y2="9.525" width="0.4064" layer="1"/>
+<wire x1="34.925" y1="9.525" x2="32.385" y2="9.525" width="0.4064" layer="1"/>
+<wire x1="32.385" y1="9.525" x2="32.385" y2="10.16" width="0.4064" layer="1"/>
+<wire x1="29.905" y1="10.16" x2="29.845" y2="10.16" width="0.4064" layer="1"/>
+<wire x1="29.845" y1="10.16" x2="27.305" y2="12.7" width="0.4064" layer="1"/>
+<wire x1="27.305" y1="12.7" x2="23.495" y2="12.7" width="0.4064" layer="1"/>
+<wire x1="23.495" y1="12.7" x2="22.225" y2="11.43" width="0.4064" layer="1"/>
+<wire x1="22.225" y1="11.43" x2="22.225" y2="5.715" width="0.4064" layer="1"/>
+<wire x1="22.225" y1="5.715" x2="19.685" y2="3.175" width="0.4064" layer="1"/>
+<wire x1="19.685" y1="3.175" x2="11.43" y2="3.175" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$2">
 <contactref element="R2" pad="2"/>
@@ -1899,8 +1947,8 @@ design rules under a new name.</description>
 </signals>
 <errors>
 <approved hash="3,1,9bc587a77ae36681"/>
-<approved hash="18,29,a0bee72ba6fe2759"/>
 <approved hash="18,29,f2fb0ccb3bd23719"/>
+<approved hash="18,29,a0bee72ba6fe2759"/>
 <approved hash="18,29,94acda6f9054c613"/>
 <approved hash="18,29,137d60ce2979ccbc"/>
 </errors>

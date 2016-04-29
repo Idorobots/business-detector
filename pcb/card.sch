@@ -8,20 +8,20 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -30,8 +30,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -39,12 +39,12 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -12720,6 +12720,75 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </deviceset>
 </devicesets>
 </library>
+<library name="bat">
+<packages>
+<package name="KB3003">
+<wire x1="-3.81" y1="-10.795" x2="3.81" y2="-10.795" width="0.127" layer="51"/>
+<wire x1="-3.81" y1="-10.795" x2="-10.795" y2="-5.08" width="0.127" layer="51"/>
+<wire x1="3.81" y1="-10.795" x2="10.795" y2="-5.08" width="0.127" layer="51"/>
+<wire x1="-10.795" y1="6.35" x2="-5.08" y2="8.89" width="0.127" layer="51" curve="-146.309932"/>
+<wire x1="5.08" y1="8.89" x2="10.795" y2="6.35" width="0.127" layer="51" curve="-146.309932"/>
+<wire x1="5.08" y1="8.89" x2="-5.08" y2="8.89" width="0.127" layer="51" curve="-136.397181"/>
+<wire x1="-3.81" y1="0" x2="-7.62" y2="0" width="0.127" layer="51" curve="-285.068488"/>
+<wire x1="-4.445" y1="-0.635" x2="-6.985" y2="-0.635" width="0.127" layer="51" curve="-285.068488"/>
+<wire x1="-7.62" y1="0" x2="-7.62" y2="3.81" width="0.127" layer="51"/>
+<wire x1="-6.985" y1="-0.635" x2="-6.985" y2="3.81" width="0.127" layer="51"/>
+<wire x1="-3.81" y1="0" x2="-3.81" y2="3.81" width="0.127" layer="51"/>
+<wire x1="-4.445" y1="-0.635" x2="-4.445" y2="3.81" width="0.127" layer="51"/>
+<wire x1="7.62" y1="0" x2="3.81" y2="0" width="0.127" layer="51" curve="-285.068488"/>
+<wire x1="6.985" y1="-0.635" x2="4.445" y2="-0.635" width="0.127" layer="51" curve="-285.068488"/>
+<wire x1="3.81" y1="0" x2="3.81" y2="3.81" width="0.127" layer="51"/>
+<wire x1="4.445" y1="-0.635" x2="4.445" y2="3.81" width="0.127" layer="51"/>
+<wire x1="7.62" y1="0" x2="7.62" y2="3.81" width="0.127" layer="51"/>
+<wire x1="6.985" y1="-0.635" x2="6.985" y2="3.81" width="0.127" layer="51"/>
+<smd name="+@1" x="-11.43" y="0" dx="2" dy="10" layer="1"/>
+<smd name="+@2" x="11.43" y="0" dx="2" dy="10" layer="1"/>
+<smd name="-" x="0" y="0" dx="18" dy="18" layer="1" roundness="100"/>
+<wire x1="-10.795" y1="4.445" x2="-12.065" y2="4.445" width="0.127" layer="51"/>
+<wire x1="-12.065" y1="4.445" x2="-12.065" y2="-4.445" width="0.127" layer="51"/>
+<wire x1="-12.065" y1="-4.445" x2="-10.795" y2="-4.445" width="0.127" layer="51"/>
+<wire x1="10.795" y1="-4.445" x2="12.065" y2="-4.445" width="0.127" layer="51"/>
+<wire x1="12.065" y1="-4.445" x2="12.065" y2="4.445" width="0.127" layer="51"/>
+<wire x1="12.065" y1="4.445" x2="10.795" y2="4.445" width="0.127" layer="51"/>
+<wire x1="-10.795" y1="5.08" x2="-10.795" y2="-5.08" width="0.127" layer="51"/>
+<wire x1="10.795" y1="-5.08" x2="10.795" y2="5.08" width="0.127" layer="51"/>
+<wire x1="-10.795" y1="6.35" x2="-10.795" y2="5.08" width="0.127" layer="51"/>
+<wire x1="10.795" y1="6.35" x2="10.795" y2="5.08" width="0.127" layer="51"/>
+<wire x1="0" y1="-6.985" x2="0" y2="-9.525" width="0.127" layer="51"/>
+<wire x1="-1.27" y1="-8.255" x2="1.27" y2="-8.255" width="0.127" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="BATTERY">
+<wire x1="-1.778" y1="0.508" x2="0" y2="0.508" width="0.254" layer="94"/>
+<wire x1="0" y1="0.508" x2="1.778" y2="0.508" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="-0.508" x2="0" y2="-0.508" width="0.254" layer="94"/>
+<wire x1="0" y1="0.508" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-0.508" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-0.508" x2="0.762" y2="-0.508" width="0.254" layer="94"/>
+<pin name="+" x="0" y="2.54" visible="pin" length="point" direction="pwr" rot="R180"/>
+<pin name="-" x="0" y="-2.54" visible="pin" length="point" direction="pwr" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="KB3003">
+<gates>
+<gate name="G$1" symbol="BATTERY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="KB3003">
+<connects>
+<connect gate="G$1" pin="+" pad="+@1 +@2" route="any"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -12757,8 +12826,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="P+5" library="supply1" deviceset="VCC" device=""/>
 <part name="SDA" library="wirepad" deviceset="SMD2" device=""/>
 <part name="SCL" library="wirepad" deviceset="SMD2" device=""/>
-<part name="BAT+" library="wirepad" deviceset="SMD2" device=""/>
-<part name="BAT-" library="wirepad" deviceset="SMD2" device=""/>
 <part name="IC2" library="microchip" deviceset="24*" device="SN" technology="LC256"/>
 <part name="GND" library="wirepad" deviceset="SMD2" device=""/>
 <part name="C1" library="resistor" deviceset="C-EU" device="C1206K" value="10nF"/>
@@ -12766,6 +12833,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="R4" library="resistor" deviceset="R-US_" device="M1206" value="10M"/>
 <part name="R5" library="resistor" deviceset="R-US_" device="M1206" value="10M"/>
 <part name="ANT" library="testpad" deviceset="TP" device="B1,27"/>
+<part name="BAT" library="bat" deviceset="KB3003" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12804,8 +12872,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="P+5" gate="VCC" x="99.06" y="33.02"/>
 <instance part="SDA" gate="1" x="134.62" y="15.24" rot="R180"/>
 <instance part="SCL" gate="1" x="93.98" y="22.86"/>
-<instance part="BAT+" gate="1" x="43.18" y="17.78"/>
-<instance part="BAT-" gate="1" x="43.18" y="5.08"/>
 <instance part="IC2" gate="G$1" x="114.3" y="15.24"/>
 <instance part="GND" gate="1" x="93.98" y="15.24"/>
 <instance part="C1" gate="G$1" x="-17.78" y="58.42"/>
@@ -12813,6 +12879,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="R4" gate="G$1" x="-22.86" y="30.48"/>
 <instance part="R5" gate="G$1" x="-22.86" y="22.86" rot="R180"/>
 <instance part="ANT" gate="G$1" x="-17.78" y="78.74"/>
+<instance part="BAT" gate="G$1" x="45.72" y="10.16"/>
 </instances>
 <busses>
 </busses>
@@ -12869,7 +12936,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="60.96" y1="5.08" x2="60.96" y2="2.54" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="5.08" x2="60.96" y2="5.08" width="0.1524" layer="91"/>
 <junction x="60.96" y="5.08"/>
-<pinref part="BAT-" gate="1" pin="P"/>
+<pinref part="BAT" gate="G$1" pin="-"/>
+<wire x1="45.72" y1="5.08" x2="45.72" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND7" gate="1" pin="GND"/>
@@ -12942,7 +13010,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="60.96" y1="17.78" x2="60.96" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="17.78" x2="60.96" y2="17.78" width="0.1524" layer="91"/>
 <junction x="60.96" y="17.78"/>
-<pinref part="BAT+" gate="1" pin="P"/>
+<pinref part="BAT" gate="G$1" pin="+"/>
+<wire x1="45.72" y1="17.78" x2="45.72" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="P+4" gate="VCC" pin="VCC"/>
@@ -13056,13 +13125,12 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <errors>
 <approved hash="101,1,15.24,22.86,IC1B,O,,,,"/>
 <approved hash="101,1,15.24,7.62,IC1C,O,,,,"/>
+<approved hash="104,1,45.72,12.7,U$1,+,VCC,,,"/>
+<approved hash="104,1,45.72,7.62,U$1,-,GND,,,"/>
 <approved hash="113,1,73.66,51.2868,D1,,,,,"/>
 <approved hash="113,1,137.482,62.23,LED,,,,,"/>
 <approved hash="113,1,132.359,14.0674,SDA,,,,,"/>
 <approved hash="113,1,96.2406,24.0326,SCL,,,,,"/>
-<approved hash="113,1,45.4406,18.9526,BAT+,,,,,"/>
-<approved hash="113,1,45.4406,6.25263,BAT-,,,,,"/>
-<approved hash="113,1,-16.6074,76.4794,ANT,,,,,"/>
 <approved hash="113,1,96.2406,16.4126,GND,,,,,"/>
 </errors>
 </schematic>
