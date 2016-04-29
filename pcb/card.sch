@@ -12433,6 +12433,7 @@ I2C</description>
 <approved hash="101,1,15.24,7.62,IC1C,O,,,,"/>
 <approved hash="104,1,45.72,12.7,BAT,+,VCC,,,"/>
 <approved hash="104,1,45.72,7.62,BAT,-,GND,,,"/>
+<approved hash="106,1,-17.78,73.66,ANT,,,,,"/>
 <approved hash="113,1,73.66,51.2868,D1,,,,,"/>
 <approved hash="113,1,137.482,62.23,LED,,,,,"/>
 <approved hash="113,1,132.359,14.0674,SDA,,,,,"/>
