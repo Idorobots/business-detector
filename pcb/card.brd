@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.3175" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.3175" altunitdist="mm" altunit="mm"/>
+<grid distance="0.635" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.3175" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -2171,9 +2171,9 @@
 <rectangle x1="72.75161875" y1="45.887109375" x2="73.5974375" y2="45.929528125" layer="29"/>
 <rectangle x1="16.61761875" y1="45.929528125" x2="17.37961875" y2="45.971946875" layer="29"/>
 <rectangle x1="72.79225625" y1="45.929528125" x2="73.55425625" y2="45.971946875" layer="29"/>
-<rectangle x1="16.65825625" y1="45.971946875" x2="17.3364375" y2="46.014109375" layer="29"/>
+<rectangle x1="16.65825625" y1="46.471946875" x2="17.3364375" y2="46.514109375" layer="29"/>
 <rectangle x1="72.8354375" y1="45.971946875" x2="73.51361875" y2="46.014109375" layer="29"/>
-<rectangle x1="16.74461875" y1="46.014109375" x2="17.25261875" y2="46.056528125" layer="29"/>
+<rectangle x1="16.74461875" y1="46.514109375" x2="17.25261875" y2="46.556528125" layer="29"/>
 <rectangle x1="72.91925625" y1="46.014109375" x2="73.42725625" y2="46.056528125" layer="29"/>
 <rectangle x1="31.395415625" y1="29.32150625" x2="31.733234375" y2="29.36366875" layer="29"/>
 <rectangle x1="73.262234375" y1="29.32150625" x2="74.067415625" y2="29.36366875" layer="29"/>
@@ -5507,8 +5507,8 @@ design rules under a new name.</description>
 <vertex x="0" y="53.975"/>
 <vertex x="0" y="0"/>
 <vertex x="84.7725" y="0"/>
-<vertex x="84.7725" y="37.465"/>
-<vertex x="68.2625" y="53.975"/>
+<vertex x="84.7725" y="40.64"/>
+<vertex x="71.4375" y="53.975"/>
 </polygon>
 <contactref element="IC2" pad="1"/>
 <contactref element="IC2" pad="2"/>
@@ -5669,16 +5669,14 @@ design rules under a new name.</description>
 </signal>
 <signal name="ANT">
 <contactref element="R1" pad="2"/>
-<wire x1="83.5025" y1="43.4975" x2="83.5025" y2="41.5925" width="0.4064" layer="1"/>
-<wire x1="83.5025" y1="41.5925" x2="72.39" y2="52.705" width="0.4064" layer="1"/>
-<wire x1="72.39" y1="52.705" x2="70.485" y2="52.705" width="0.4064" layer="1"/>
-<wire x1="70.485" y1="52.705" x2="83.5025" y2="39.6875" width="0.4064" layer="1"/>
+<wire x1="83.5025" y1="43.4975" x2="83.5025" y2="41.91" width="0.4064" layer="1"/>
+<wire x1="83.5025" y1="41.91" x2="83.5025" y2="41.5925" width="0.4064" layer="1"/>
 <wire x1="83.5025" y1="43.4975" x2="74.295" y2="52.705" width="0.4064" layer="1"/>
 <wire x1="74.295" y1="52.705" x2="76.2" y2="52.705" width="0.4064" layer="1"/>
 <wire x1="76.2" y1="52.705" x2="83.5025" y2="45.4025" width="0.4064" layer="1"/>
 <wire x1="83.5025" y1="45.4025" x2="83.5025" y2="47.3075" width="0.4064" layer="1"/>
 <wire x1="83.5025" y1="47.3075" x2="78.105" y2="52.705" width="0.4064" layer="1"/>
-<wire x1="83.5025" y1="39.6875" x2="83.5025" y2="24.4475" width="0.4064" layer="1"/>
+<wire x1="83.5025" y1="41.5925" x2="83.5025" y2="24.4475" width="0.4064" layer="1"/>
 <wire x1="83.5025" y1="24.4475" x2="80.645" y2="21.59" width="0.4064" layer="1"/>
 <wire x1="80.645" y1="21.59" x2="80.645" y2="21.72" width="0.4064" layer="1"/>
 <wire x1="78.105" y1="52.705" x2="80.01" y2="52.705" width="0.4064" layer="1"/>
@@ -5707,6 +5705,219 @@ design rules under a new name.</description>
 <contactref element="R4" pad="1"/>
 <contactref element="R5" pad="2"/>
 <wire x1="61.595" y1="18.92" x2="57.785" y2="18.92" width="0.4064" layer="1"/>
+</signal>
+<signal name="N$17">
+<wire x1="1.365" y1="52.635" x2="1.365" y2="49.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$18">
+<wire x1="2.365" y1="52.635" x2="2.365" y2="51.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$19">
+<wire x1="3.365" y1="52.635" x2="3.365" y2="51.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$20">
+<wire x1="4.365" y1="52.635" x2="4.365" y2="51.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$21">
+<wire x1="5.365" y1="52.635" x2="5.365" y2="51.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$22">
+<wire x1="6.365" y1="52.635" x2="6.365" y2="50.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$23">
+<wire x1="7.365" y1="52.635" x2="7.365" y2="51.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$24">
+<wire x1="8.365" y1="52.635" x2="8.365" y2="51.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$25">
+<wire x1="9.365" y1="51.635" x2="9.365" y2="52.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$26">
+<wire x1="10.365" y1="52.635" x2="10.365" y2="51.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$27">
+<wire x1="11.365" y1="52.635" x2="11.365" y2="49.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$28">
+<wire x1="12.365" y1="52.635" x2="12.365" y2="51.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$29">
+<wire x1="13.365" y1="52.635" x2="13.365" y2="51.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$30">
+<wire x1="14.365" y1="52.635" x2="14.365" y2="51.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$31">
+<wire x1="15.365" y1="52.635" x2="15.365" y2="51.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$32">
+<wire x1="16.365" y1="52.635" x2="16.365" y2="50.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$33">
+<wire x1="17.365" y1="52.635" x2="17.365" y2="51.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$34">
+<wire x1="18.365" y1="52.635" x2="18.365" y2="51.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$35">
+<wire x1="19.365" y1="51.635" x2="19.365" y2="52.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$36">
+<wire x1="20.365" y1="52.635" x2="20.365" y2="51.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$37">
+<wire x1="21.365" y1="52.635" x2="21.365" y2="49.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$38">
+<wire x1="22.365" y1="52.635" x2="22.365" y2="51.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$39">
+<wire x1="23.365" y1="52.635" x2="23.365" y2="51.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$40">
+<wire x1="24.365" y1="52.635" x2="24.365" y2="51.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$41">
+<wire x1="25.365" y1="52.635" x2="25.365" y2="51.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$42">
+<wire x1="26.365" y1="52.635" x2="26.365" y2="50.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$43">
+<wire x1="27.365" y1="52.635" x2="27.365" y2="51.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$44">
+<wire x1="28.365" y1="52.635" x2="28.365" y2="51.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$45">
+<wire x1="29.365" y1="51.635" x2="29.365" y2="52.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$46">
+<wire x1="30.365" y1="52.635" x2="30.365" y2="51.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$47">
+<wire x1="31.365" y1="52.635" x2="31.365" y2="49.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$48">
+<wire x1="32.365" y1="52.635" x2="32.365" y2="51.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$49">
+<wire x1="33.365" y1="52.635" x2="33.365" y2="51.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$50">
+<wire x1="34.365" y1="52.635" x2="34.365" y2="51.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$51">
+<wire x1="35.365" y1="52.635" x2="35.365" y2="51.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$52">
+<wire x1="36.365" y1="52.635" x2="36.365" y2="50.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$53">
+<wire x1="37.365" y1="52.635" x2="37.365" y2="51.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$54">
+<wire x1="38.365" y1="52.635" x2="38.365" y2="51.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$55">
+<wire x1="39.365" y1="51.635" x2="39.365" y2="52.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$56">
+<wire x1="40.365" y1="52.635" x2="40.365" y2="51.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$57">
+<wire x1="41.365" y1="52.635" x2="41.365" y2="49.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$58">
+<wire x1="42.365" y1="52.635" x2="42.365" y2="51.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$59">
+<wire x1="43.365" y1="52.635" x2="43.365" y2="51.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$60">
+<wire x1="44.365" y1="52.635" x2="44.365" y2="51.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$61">
+<wire x1="45.365" y1="52.635" x2="45.365" y2="51.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$62">
+<wire x1="46.365" y1="52.635" x2="46.365" y2="50.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$63">
+<wire x1="47.365" y1="52.635" x2="47.365" y2="51.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$64">
+<wire x1="48.365" y1="52.635" x2="48.365" y2="51.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$65">
+<wire x1="49.365" y1="51.635" x2="49.365" y2="52.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$66">
+<wire x1="50.365" y1="52.635" x2="50.365" y2="51.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$67">
+<wire x1="51.365" y1="52.635" x2="51.365" y2="49.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$68">
+<wire x1="52.365" y1="52.635" x2="52.365" y2="51.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$69">
+<wire x1="53.365" y1="52.635" x2="53.365" y2="51.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$70">
+<wire x1="54.365" y1="52.635" x2="54.365" y2="51.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$71">
+<wire x1="55.365" y1="52.635" x2="55.365" y2="51.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$72">
+<wire x1="56.365" y1="52.635" x2="56.365" y2="50.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$73">
+<wire x1="57.365" y1="52.635" x2="57.365" y2="51.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$74">
+<wire x1="58.365" y1="52.635" x2="58.365" y2="51.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$75">
+<wire x1="59.365" y1="51.635" x2="59.365" y2="52.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$76">
+<wire x1="60.365" y1="52.635" x2="60.365" y2="51.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$77">
+<wire x1="61.365" y1="52.635" x2="61.365" y2="49.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$78">
+<wire x1="62.365" y1="52.635" x2="62.365" y2="51.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$79">
+<wire x1="63.365" y1="52.635" x2="63.365" y2="51.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$80">
+<wire x1="64.365" y1="51.635" x2="64.365" y2="52.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$81">
+<wire x1="65.365" y1="52.635" x2="65.365" y2="51.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$82">
+<wire x1="66.365" y1="52.635" x2="66.365" y2="50.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$83">
+<wire x1="67.365" y1="52.635" x2="67.365" y2="51.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$84">
+<wire x1="68.365" y1="51.635" x2="68.365" y2="52.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$85">
+<wire x1="69.365" y1="52.635" x2="69.365" y2="51.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$86">
+<wire x1="70.525" y1="52.635" x2="70.525" y2="51.635" width="0.254" layer="1"/>
+</signal>
+<signal name="N$87">
+<wire x1="71.525" y1="52.635" x2="71.525" y2="49.635" width="0.254" layer="1"/>
 </signal>
 </signals>
 <errors>
