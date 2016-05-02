@@ -5407,20 +5407,20 @@ design rules under a new name.</description>
 <attribute name="NAME" x="73.99" y="5.885" size="1.016" layer="25" rot="R180"/>
 </element>
 <element name="D2" library="diode" package="MINIMELF" value="" x="71.12" y="13.335" smashed="yes" rot="R180">
-<attribute name="NAME" x="68.326" y="13.509515625" size="1.016" layer="25" rot="R180"/>
+<attribute name="NAME" x="70.4215" y="14.430484375" size="1.016" layer="25"/>
 <attribute name="VALUE" x="72.771" y="15.748" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="IC1" library="74xx-eu" package="SO14" value="74HC14D" x="61.595" y="10.16" smashed="yes">
 <attribute name="NAME" x="65.405" y="5.6515" size="1.016" layer="25" ratio="10" rot="R180"/>
 </element>
-<element name="LED" library="led" package="CHIPLED_1206" value="" x="80.3275" y="4.7625" smashed="yes" rot="R315">
-<attribute name="VALUE" x="81.225525" y="2.068425" size="1.27" layer="27" rot="R45"/>
+<element name="LED" library="led" package="CHIPLED_1206" value="" x="80.01" y="4.7625" smashed="yes" rot="R315">
+<attribute name="VALUE" x="80.908021875" y="2.068425" size="1.27" layer="27" rot="R45"/>
 </element>
 <element name="Q1" library="transistor" package="SOT23-BEC" value="BC817" x="78.105" y="13.335" smashed="yes" rot="R270">
-<attribute name="NAME" x="80.645" y="12.7" size="1.016" layer="25"/>
+<attribute name="NAME" x="76.2" y="15.5575" size="1.016" layer="25"/>
 </element>
 <element name="R1" library="resistor" package="M1206" value="470k" x="71.12" y="18.7325" smashed="yes">
-<attribute name="NAME" x="72.0725" y="17.145" size="1.016" layer="25" rot="R180"/>
+<attribute name="NAME" x="72.39" y="17.145" size="1.016" layer="25" rot="R180"/>
 </element>
 <element name="R3" library="resistor" package="M1206" value="100k" x="69.215" y="8.89" smashed="yes" rot="R270">
 <attribute name="NAME" x="69.85" y="5.9050625" size="1.016" layer="25" rot="R180"/>
@@ -5455,6 +5455,9 @@ design rules under a new name.</description>
 <attribute name="NAME" x="66.1035" y="17.272" size="1.016" layer="25" rot="R180"/>
 <attribute name="VALUE" x="66.7385" y="21.1455" size="1.27" layer="27" rot="R180"/>
 </element>
+<element name="R5" library="resistor" package="M1206" value="470R" x="71.12" y="3.175" smashed="yes">
+<attribute name="NAME" x="67.945" y="2.2225" size="1.016" layer="25" rot="R90"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -5482,12 +5485,10 @@ design rules under a new name.</description>
 <signal name="VCC">
 <contactref element="IC1" pad="14"/>
 <contactref element="R2" pad="2"/>
-<contactref element="LED" pad="A"/>
 <contactref element="C3" pad="2"/>
 <wire x1="57.785" y1="12.7" x2="57.785" y2="13.2334" width="0.4064" layer="1"/>
 <contactref element="BAT" pad="+@2" route="any" routetag="G$1.+"/>
 <contactref element="BAT" pad="+@1" route="any" routetag="G$1.+"/>
-<wire x1="79.122625" y1="3.175" x2="79.0900625" y2="3.5250625" width="0.4064" layer="1"/>
 <contactref element="IC2" pad="8"/>
 <contactref element="IC2" pad="7"/>
 <wire x1="28.8925" y1="13.97" x2="28.575" y2="14.605" width="0.6096" layer="1"/>
@@ -5503,9 +5504,10 @@ design rules under a new name.</description>
 <wire x1="49.8475" y1="10.39" x2="52.07" y2="10.39" width="0.6096" layer="1"/>
 <wire x1="52.07" y1="10.39" x2="54.1925" y2="10.39" width="0.6096" layer="1"/>
 <wire x1="54.1925" y1="10.39" x2="54.2925" y2="10.29" width="0.6096" layer="1"/>
-<wire x1="79.122625" y1="3.175" x2="54.9275" y2="3.175" width="0.6096" layer="1"/>
 <wire x1="54.9275" y1="3.175" x2="52.07" y2="6.0325" width="0.6096" layer="1"/>
 <wire x1="52.07" y1="6.0325" x2="52.07" y2="10.39" width="0.6096" layer="1"/>
+<contactref element="R5" pad="1"/>
+<wire x1="69.72" y1="3.175" x2="54.9275" y2="3.175" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$2">
 <contactref element="D1" pad="C"/>
@@ -5593,14 +5595,6 @@ design rules under a new name.</description>
 <wire x1="66.675" y1="11.43" x2="67.6275" y2="12.3825" width="0.4064" layer="1"/>
 <wire x1="67.6275" y1="12.3825" x2="67.6275" y2="13.97" width="0.4064" layer="1"/>
 <wire x1="67.6275" y1="13.97" x2="68.58" y2="14.9225" width="0.4064" layer="1"/>
-</signal>
-<signal name="N$13">
-<contactref element="Q1" pad="C"/>
-<contactref element="LED" pad="C"/>
-<wire x1="79.205" y1="13.335" x2="79.375" y2="13.335" width="0.4064" layer="1"/>
-<wire x1="79.375" y1="13.335" x2="80.645" y2="12.065" width="0.6096" layer="1"/>
-<wire x1="80.645" y1="12.065" x2="80.645" y2="6.91986875" width="0.6096" layer="1"/>
-<wire x1="80.645" y1="6.91986875" x2="81.564934375" y2="5.999934375" width="0.6096" layer="1"/>
 </signal>
 <signal name="ANT">
 <contactref element="R1" pad="2"/>
@@ -5863,6 +5857,20 @@ design rules under a new name.</description>
 <wire x1="57.2375" y1="18.01" x2="59.055" y2="16.1925" width="0.4064" layer="1"/>
 <wire x1="59.055" y1="16.1925" x2="59.055" y2="13.2334" width="0.4064" layer="1"/>
 </signal>
+<signal name="N$3">
+<contactref element="LED" pad="A"/>
+<contactref element="R5" pad="2"/>
+<wire x1="72.52" y1="3.175" x2="78.4225" y2="3.175" width="0.6096" layer="1"/>
+<wire x1="78.4225" y1="3.175" x2="78.7725625" y2="3.5250625" width="0.6096" layer="1"/>
+</signal>
+<signal name="N$4">
+<contactref element="Q1" pad="C"/>
+<contactref element="LED" pad="C"/>
+<wire x1="79.205" y1="13.335" x2="79.6925" y2="13.335" width="0.6096" layer="1"/>
+<wire x1="79.6925" y1="13.335" x2="81.28" y2="11.7475" width="0.6096" layer="1"/>
+<wire x1="81.28" y1="11.7475" x2="81.28" y2="6.0325" width="0.6096" layer="1"/>
+<wire x1="81.28" y1="6.0325" x2="81.247434375" y2="5.999934375" width="0.6096" layer="1"/>
+</signal>
 </signals>
 <errors>
 <approved hash="18,29,e08bcb6a8b6ea08f"/>
@@ -5875,8 +5883,8 @@ design rules under a new name.</description>
 <approved hash="18,29,e976f055b051a972"/>
 <approved hash="18,29,6389bdf3dbc3f337"/>
 <approved hash="18,29,139d14b193ebcbbb"/>
-<approved hash="18,29,00a4403b1d5816f5"/>
 <approved hash="18,29,06a2f7969ab21c49"/>
+<approved hash="18,29,00a4403b1d5816f5"/>
 </errors>
 </board>
 </drawing>
