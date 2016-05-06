@@ -9709,14 +9709,14 @@ Source: www.kingbright.com</description>
 <wire x1="-1.27" y1="-8.255" x2="1.27" y2="-8.255" width="0.127" layer="51"/>
 </package>
 <package name="SOIC8">
-<smd name="1" x="-2.8575" y="2.54" dx="2" dy="0.635" layer="1"/>
-<smd name="2" x="-2.8575" y="1.27" dx="2" dy="0.635" layer="1"/>
-<smd name="3" x="-2.8575" y="0" dx="2" dy="0.635" layer="1"/>
-<smd name="4" x="-2.8575" y="-1.27" dx="2" dy="0.635" layer="1"/>
-<smd name="8" x="2.8575" y="2.54" dx="2" dy="0.635" layer="1"/>
-<smd name="7" x="2.8575" y="1.27" dx="2" dy="0.635" layer="1"/>
-<smd name="6" x="2.8575" y="0" dx="2" dy="0.635" layer="1"/>
-<smd name="5" x="2.8575" y="-1.27" dx="2" dy="0.635" layer="1"/>
+<smd name="1" x="-3.01625" y="2.54" dx="2.54" dy="0.635" layer="1"/>
+<smd name="2" x="-3.01625" y="1.27" dx="2.54" dy="0.635" layer="1"/>
+<smd name="3" x="-3.01625" y="0" dx="2.54" dy="0.635" layer="1"/>
+<smd name="4" x="-3.01625" y="-1.27" dx="2.54" dy="0.635" layer="1"/>
+<smd name="8" x="3.01625" y="2.54" dx="2.54" dy="0.635" layer="1"/>
+<smd name="7" x="3.01625" y="1.27" dx="2.54" dy="0.635" layer="1"/>
+<smd name="6" x="3.01625" y="0" dx="2.54" dy="0.635" layer="1"/>
+<smd name="5" x="3.01625" y="-1.27" dx="2.54" dy="0.635" layer="1"/>
 <wire x1="-1.905" y1="3.175" x2="1.905" y2="3.175" width="0.127" layer="21"/>
 <wire x1="1.905" y1="3.175" x2="1.905" y2="-1.905" width="0.127" layer="21"/>
 <wire x1="1.905" y1="-1.905" x2="-1.905" y2="-1.905" width="0.127" layer="21"/>
